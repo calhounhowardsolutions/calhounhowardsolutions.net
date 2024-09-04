@@ -4,43 +4,82 @@ layout: page
 permalink: /
 
 header:
-    overlay_image: /assets/images/hero-background.jpg
-    overlay_filter: rgba(8, 30, 61, 0.6)
+    overlay_image: /assets/images/hero-background.jpg # Update with your background image
+    overlay_filter: rgba(8, 30, 61, 0.6) # Matches your brand's dark navy
+    caption: "Providing Cutting-edge HVACR and Handyman Services"
     actions:
-        - label: "Learn More"
-          url: "#about"
+        - label: "Explore Our Services"
+          url: "#services"
           blank: false
+
 excerpt: "Your Trusted Partner for Infrastructure Maintenance"
-
-# Services Section
 ---
-<section id="services" class="site-section">
-  <h2>Our Services</h2>
-  <div class="service">
-    <i class="fa fa-wrench"></i>
-    <h3>Handyman Services</h3>
-    <p>Providing comprehensive repair and maintenance solutions for residential and commercial properties.</p>
-  </div>
-  <div class="service">
-    <i class="fa fa-snowflake"></i>
-    <h3>HVACR Services</h3>
-    <p>Specializing in air conditioning, refrigeration, and custom HVAC solutions.</p>
-  </div>
-  <div class="service">
-    <i class="fa fa-cogs"></i>
-    <h3>Specialized Equipment Maintenance</h3>
-    <p>Expert care for commercial-grade equipment like ice machines and soft serve machines.</p>
-  </div>
+
+<!-- Hero Section -->
+<section class="site-section first-section" id="hero">
+    <h1>Calhoun Howard Solutions LLC</h1>
+    <h2>Your Trusted Partner for Infrastructure Maintenance</h2>
+    <p>Specializing in HVACR, handyman services, and specialized maintenance for commercial clients.</p>
+    <a href="#services" class="btn btn--primary btn--large">Explore Our Services</a>
 </section>
 
-# About Section
-<section id="about" class="site-section">
-  <h2>About Us</h2>
-  <p>Calhoun Howard Solutions LLC offers years of experience in HVACR and general maintenance. Founded by Calhoun Howard, we’re committed to providing reliable and cutting-edge services to our local community.</p>
+<hr class="section-sep">
+
+<!-- Services Section -->
+<section class="site-section alternative-color" id="services">
+    <h2>Our Services</h2>
+    <div class="service-container">
+        <div class="service-box">
+            <i class="fas fa-wrench"></i>
+            <h3>Handyman Services</h3>
+            <p>Comprehensive solutions for residential and commercial properties, from repairs to renovations.</p>
+        </div>
+        <div class="service-box">
+            <i class="fas fa-snowflake"></i>
+            <h3>HVACR Services</h3>
+            <p>Expert installation and maintenance for air conditioning, refrigeration, and HVAC systems.</p>
+        </div>
+        <div class="service-box">
+            <i class="fas fa-cogs"></i>
+            <h3>Specialized Equipment Maintenance</h3>
+            <p>Professional care for commercial-grade equipment like ice machines and soft serve machines.</p>
+        </div>
+    </div>
 </section>
 
-# Contact Section
-<section id="contact" class="site-section">
-  <h2>Contact Us</h2>
-  <p>Email us at <a href="mailto:your-email@example.com">your-email@example.com</a> or reach out on Instagram <a href="https://www.instagram.com/yourhandle">@yourhandle</a>.</p>
+<hr class="section-sep">
+
+<!-- About Section -->
+<section class="site-section" id="about">
+    <h2>About Us</h2>
+    <p>Founded by Calhoun Howard, we have years of experience in providing expert-level HVACR services and handyman solutions. We pride ourselves on delivering cutting-edge maintenance services with a focus on reliability and customer satisfaction.</p>
+    
+    <div class="round-images-container">
+        {% include round-images %}
+        round-images:
+        - image-path: "/assets/images/team.jpg"
+          size: "third"
+          header: "Our Team"
+          caption: "Experienced professionals dedicated to excellence."
+        - image-path: "/assets/images/tools.jpg"
+          size: "third"
+          header: "Tools of the Trade"
+          caption: "Using modern tools to ensure high-quality service."
+        - image-path: "/assets/images/project.jpg"
+          size: "third"
+          header: "Completed Projects"
+          caption: "Delivering results for businesses and homeowners."
+    </div>
+</section>
+
+<hr class="section-sep">
+
+<!-- Contact Section -->
+<section class="site-section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Need help with your next project? Reach out for a consultation or quote!</p>
+    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/yourhandle">@yourhandle</a></p>
+    
+    <a href="mailto:your-email@example.com" class="btn btn--primary btn--large">Get a Quote</a>
 </section>
