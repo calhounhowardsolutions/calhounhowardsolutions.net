@@ -10,7 +10,7 @@ oneflow-skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Calhoun Howard Solutions LLC"
+title                    : "CALHOUN HOWARD SOLUTIONS LLC"
 title_separator          : "-"
 subtitle                 : "Dependable Cape and Island Home & Commercial Care" # Displayed in the masthead below the title, use " " for no subtitle
 url                      : "https://calhounhowardsolutions.net" # the base hostname & protocol for your site
