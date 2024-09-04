@@ -15,7 +15,6 @@ title_separator          : "-"
 subtitle                 : "Dependable Cape and Island Home & Commercial Care" # Displayed in the masthead below the title, use " " for no subtitle
 url                      : "https://calhounhowardsolutions.net" # the base hostname & protocol for your site
 baseurl                  : # the subpath of your site, e.g. "/blog"
-favicon                  : "/assets/images/favicon.ico" # or /assets/images/favicon.png
 repository               : "calhounhowardsolutions/calhounhowardsolutions.net" # GitHub username/repo-name
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/logo.webp" # Site logo displayed in the masthead
