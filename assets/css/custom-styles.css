@@ -27,8 +27,13 @@ h1, h2 {
 /* Fix background image for mobile devices */
 @media only screen and (max-width: 768px) {
     header {
-        background-attachment: scroll; /* Makes the background scroll normally on mobile */
-        background-size: cover; /* Ensures the image covers the whole area without tiling */
-        background-repeat: no-repeat; /* Prevents tiling */
+        background-attachment: scroll;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .site-section {
+        background-size: cover; /* Ensure this is applied across sections */
+        background-repeat: no-repeat;
     }
 }
