@@ -6,6 +6,12 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+/* Specifically apply Quicksand to headers and text */
+h1, h2, h3, h4, h5, h6, p, a, li, span, div {
+    font-family: 'Quicksand', sans-serif; /* Ensure it applies everywhere */
+    font-weight: 400; /* Default weight */
+}
+
 /* Customize the H1 and H2 headers */
 h1, h2 {
     font-weight: 600; /* Use bold weight for headers */
@@ -33,8 +39,8 @@ h1, h2 {
 
 .round-image img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Set default size for desktop */
+    height: 200px;
 }
 
 .round-image {
@@ -48,6 +54,11 @@ h1, h2 {
     .round-images-container {
         flex-direction: column; /* Stack images vertically on mobile */
         align-items: center;
+    }
+
+    .round-image img {
+        width: 150px; /* Resize for mobile */
+        height: 150px;
     }
 
     .round-image {
