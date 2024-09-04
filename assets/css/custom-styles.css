@@ -1,27 +1,21 @@
-/* Load Google Fonts - Quicksand */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+/* Load Google Fonts - Quicksand for titles, Alegreya for body text */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&family=Quicksand:wght@400;600&display=swap');
 
-/* Apply Quicksand font to the entire site */
+/* Apply Alegreya font to the entire site (default) */
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Alegreya', serif; /* Alegreya for body text */
 }
 
-/* Specifically apply Quicksand to headers and text */
-h1, h2, h3, h4, h5, h6, p, a, li, span, div {
-    font-family: 'Quicksand', sans-serif; /* Ensure it applies everywhere */
-    font-weight: 400; /* Default weight */
-}
-
-/* Customize the H1 and H2 headers */
-h1, h2 {
-    font-weight: 600; /* Use bold weight for headers */
+/* Specifically apply Quicksand to headers and titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif; /* Quicksand for headers */
+    font-weight: 600; /* Bold weight for headers */
 }
 
 /* Ensure Quicksand applies to the header and hero section */
-#hero h1, #hero h2, #hero p, #hero a {
-    font-family: 'Quicksand', sans-serif; /* Force Quicksand for all text in the hero section */
-    font-weight: 600; /* Make sure headers are bold */
-    text-transform: uppercase; /* Ensure the uppercase styling for H1 */
+#hero h1, #hero h2, #hero p, #hero a, header {
+    font-family: 'Quicksand', sans-serif; /* Force Quicksand for hero section */
+    font-weight: 600; /* Ensure headers are bold */
 }
 
 /* Styling for the service list */
@@ -29,6 +23,7 @@ h1, h2 {
     list-style-type: none;
     padding-left: 0;
     margin-top: 20px;
+    font-family: 'Alegreya', serif; /* Alegreya for list items */
 }
 
 .service-list li {
@@ -55,6 +50,7 @@ h1, h2 {
     text-align: center;
     flex: 1;
     margin: 10px;
+    font-family: 'Alegreya', serif; /* Ensure captions use Alegreya */
 }
 
 /* Mobile fix for round images */
