@@ -12,7 +12,7 @@ oneflow-skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt",
 locale                   : "en-US"
 title                    : "Calhoun Howard Solutions LLC"
 title_separator          : "-"
-subtitle                 : "Cutting-edge HVACR and Handyman Services" # Displayed in the masthead below the title, use " " for no subtitle
+subtitle                 : "Dependable Cape and Island Home & Commercial Care" # Displayed in the masthead below the title, use " " for no subtitle
 url                      : "https://calhounhowardsolutions.net" # the base hostname & protocol for your site
 baseurl                  : # the subpath of your site, e.g. "/blog"
 favicon                  : "/assets/images/favicon.ico" # or /assets/images/favicon.png
