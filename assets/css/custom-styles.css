@@ -6,10 +6,13 @@ body {
     font-family: 'Alegreya', serif; /* Alegreya for body text */
 }
 
-/* Specifically apply Quicksand to headers and titles, with light weight */
+
+/* Apply Quicksand to all headers (h1-h6) */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quicksand', sans-serif; /* Quicksand for headers */
-    font-weight: 400; /* Use light weight, no bold */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300; /* Light weight */
+    text-transform: uppercase; /* Optional: Ensure headers are uppercase */
+    margin-bottom: 20px; /* Ensure consistent spacing */
 }
 
 /* Ensure Quicksand applies to the masthead */
@@ -29,6 +32,23 @@ header .site-title, header .site-title a {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300; /* Light weight */
     text-transform: uppercase;
+}
+
+/* Align tagline to the bottom of the nav bar */
+.site-header .tagline {
+    display: inline-block;
+    vertical-align: bottom; /* Align to the bottom */
+    font-family: 'Quicksand', sans-serif; /* Ensure Quicksand for the tagline */
+    font-weight: 300; /* Light weight */
+    padding-left: 10px; /* Add a little space from the logo */
+}
+
+/* Apply Quicksand to nav bar links */
+.navbar a {
+    font-family: 'Quicksand', sans-serif; /* Use Quicksand */
+    font-weight: 300; /* Light weight */
+    text-transform: uppercase; /* Ensure all nav links are uppercase */
+    font-size: 1rem; /* Set font size */
 }
 
 /* Styling for the service list */
@@ -54,11 +74,11 @@ header .site-title, header .site-title a {
 
 .round-image img {
     border-radius: 50%;
-    width: 200px; /* Set consistent width */
-    height: auto; /* Allow height to adjust automatically */
-    max-height: 200px; /* Ensure it doesn't exceed the width */
-    aspect-ratio: 1/1; /* Ensure the image stays a perfect circle */
-    object-fit: cover; /* Prevent stretching and cropping */
+    width: 100%; /* Set width to 100% of parent container */
+    max-width: 200px; /* Max width to prevent it from getting too large */
+    aspect-ratio: 1/1; /* Ensure aspect ratio is 1:1 */
+    object-fit: cover; /* Ensures the image doesn't stretch or distort */
+    display: block; /* Removes any extra spacing */
 }
 
 .round-image {
