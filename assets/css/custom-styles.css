@@ -1,104 +1,175 @@
 /* Load Google Fonts - Quicksand for titles, Alegreya for body text */
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&family=Quicksand:wght@300;400&display=swap');
 
-/* Apply Alegreya font to the entire site (default) */
+/* Global Font Settings */
 body {
     font-family: 'Alegreya', serif; /* Alegreya for body text */
 }
 
-
-/* Apply Quicksand to all headers (h1-h6) */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300; /* Light weight */
-    text-transform: uppercase; /* Optional: Ensure headers are uppercase */
-    margin-bottom: 20px; /* Ensure consistent spacing */
+/* Background styling for .bg class */
+.bg {
+    background-size: cover;  /* Ensure the image covers the whole area */
+    background-position: center center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent tiling */
+    background-attachment: fixed;  /* Keep the image fixed */
+    
 }
 
-/* Ensure Quicksand applies to the masthead */
-header .site-title, header .site-title a {
-    font-family: 'Quicksand', sans-serif; /* Ensure the main header uses Quicksand */
-    font-weight: 300; /* Use light weight for masthead */
-    text-transform: uppercase; /* Keep it uppercase */
+/* Mobile-specific background adjustments for .bg */
+@media (max-width: 768px) {
+    .bg {
+        background-size: cover;  /* Ensure full coverage */
+        background-position: center center;
+        background-repeat: no-repeat;  /* Prevent tiling */
+        background-attachment: fixed;  /* Keep the image fixed on mobile */
+
+    }
 }
 
-/* Ensure Quicksand applies to the hero section */
-#hero h1, #hero h2, #hero p, #hero a {
-    font-family: 'Quicksand', sans-serif; /* Force Quicksand for hero section */
-    font-weight: 300; /* Light weight in the hero */
-}
-
-.site-title {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300; /* Light weight */
+/* Ensure Quicksand is applied to all headers */
+h1, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;  /* Light weight */
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
-/* Align tagline to the bottom of the nav bar */
-.site-header .tagline {
-    display: inline-block;
-    vertical-align: bottom; /* Align to the bottom */
-    font-family: 'Quicksand', sans-serif; /* Ensure Quicksand for the tagline */
-    font-weight: 300; /* Light weight */
-    padding-left: 10px; /* Add a little space from the logo */
+/* Ensure Quicksand is applied to buttons */
+.btn {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;
 }
 
-/* Apply Quicksand to nav bar links */
+/* Ensure the nav bar fonts use Quicksand */
 .navbar a {
-    font-family: 'Quicksand', sans-serif; /* Use Quicksand */
-    font-weight: 300; /* Light weight */
-    text-transform: uppercase; /* Ensure all nav links are uppercase */
-    font-size: 1rem; /* Set font size */
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;
+    text-transform: uppercase !important;
+    font-size: 1rem !important;
 }
 
-/* Styling for the service list */
+/* Hero Section - Ensure consistent fonts */
+#hero h1, #hero p, #hero a {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;
+}
+#hero h2 {
+
+    font-family: 'Alegreya', sans-serif !important;
+    font-weight: 300 !important;
+
+}
+
+#services h1 {
+
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;
+
+}
+
+.page__lead {
+    font-family: 'Alegreya', sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+.masthead__menu-item{
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;
+    font-size: 1.2rem; /* Adjust the font size as needed */
+}
+
+.site-title{
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;
+    
+}
+
+/* Service List */
 .service-list {
     list-style-type: none;
     padding-left: 0;
     margin-top: 20px;
-    font-family: 'Alegreya', serif; /* Alegreya for list items */
+    font-family: 'Alegreya', serif;
 }
 
 .service-list li {
     font-size: 1.1rem;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd; /* Light separator */
+    border-bottom: 1px solid #ddd;
 }
 
-/* Fix for round images (ensure 1:1 ratio on desktop) */
+/* Ensure proper layout and spacing for round images */
 .round-images-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.round-image img {
-    border-radius: 50%;
-    width: 100%; /* Set width to 100% of parent container */
-    max-width: 200px; /* Max width to prevent it from getting too large */
-    aspect-ratio: 1/1; /* Ensure aspect ratio is 1:1 */
-    object-fit: cover; /* Ensures the image doesn't stretch or distort */
-    display: block; /* Removes any extra spacing */
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 100px;
+    padding-bottom: 60px;
+    min-height: 400px;
 }
 
 .round-image {
     text-align: center;
-    flex: 1;
-    margin: 10px;
-    font-family: 'Alegreya', serif; /* Use Alegreya for captions */
+    margin: 0 auto;
+    
+    
 }
 
-/* Mobile fix for round images */
+.round-image img {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
+    
+    margin-bottom: 20px;
+    
+}
+
+/* Ensure proper spacing between About section and the separator */
+.section-sep {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Ensure the About Us section has proper padding/margin */
+#about {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+/* Section Padding */
+.site-section {
+    padding: 80px 20px;
+}
+
+/* Ensure the tagline uses Quicksand */
+.site-header .tagline {
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300 !important;
+    vertical-align: bottom !important;
+    display: inline-block !important;
+    padding-left: 10px !important;
+    font-size: 1rem !important;
+}
+
+/* Mobile adjustments */
 @media only screen and (max-width: 768px) {
+    .site-section {
+        padding: 40px 15px;
+    }
+
     .round-images-container {
-        flex-direction: column; /* Stack images vertically on mobile */
+        flex-direction: column;
         align-items: center;
+        gap: 250px;
     }
 
     .round-image img {
-        width: 150px; /* Resize for mobile */
-        height: 150px; /* Maintain 1:1 aspect ratio */
-        aspect-ratio: 1/1; /* Ensure circle on mobile too */
+        width: 200px;
+        height: 200px;
     }
 
     .round-image {
@@ -106,43 +177,17 @@ header .site-title, header .site-title a {
     }
 }
 
-/* Fix background image for mobile devices */
-@media only screen and (max-width: 768px) {
-    header {
-        background-attachment: scroll;
-        background-size: cover; /* Ensures image covers full width */
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .site-section {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
-
-/* Ensure About Us and Contact sections use the correct fonts */
+/* Apply fonts to About and Contact sections */
 #about h2, #contact h2 {
-    font-family: 'Quicksand', sans-serif; /* Quicksand for section headers */
-    font-weight: 300; /* Light weight for headers */
+    font-family: 'Quicksand', sans-serif !important;
+    font-weight: 300;
 }
 
 #about p, #contact p {
-    font-family: 'Alegreya', serif; /* Alegreya for body text */
+    font-family: 'Alegreya', serif;
 }
 
-/* Improve spacing between sections */
-.site-section {
-    padding: 60px 20px; /* Increase the padding for better readability */
-}
-
-@media only screen and (max-width: 768px) {
-    .site-section {
-        padding: 40px 15px; /* Smaller padding for mobile */
-    }
-}
-
-/* Footer Icon Layout */
+/* Footer Icons */
 .page__footer-follow ul.socials {
     display: flex;
     justify-content: center;
@@ -150,31 +195,24 @@ header .site-title, header .site-title a {
     padding: 0;
 }
 
-.page__footer-follow li.socials__item {
-    list-style: none;
-    margin: 10px;
-    vertical-align: middle; /* Fix icon alignment */
-}
+
 
 .page__footer-follow a.socials__item__link {
-    font-size: 2rem; /* Adjust icon size */
+    font-size: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
     .page__footer-follow a.socials__item__link {
-        font-size: 1.6rem; /* Adjust icon size for mobile */
+        font-size: 1.6rem;
     }
 }
 
-/* Fix alignment issue with Website icon in the footer */
-.page__footer-follow li.socials__item:first-child {
-    margin-top: 0; /* Ensure the first icon doesn't float */
-}
 
-/* Center the contact button */
+/* Ensure the button has a maximum width */
 #contact .btn {
     display: block;
     margin: 20px auto;
     text-align: center;
-    padding: 15px 30px; /* Make the button larger for better usability */
+    padding: 15px 30px;
+    max-width: 300px;
 }
