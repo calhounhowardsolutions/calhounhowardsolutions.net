@@ -43,7 +43,8 @@ h1, h2 {
     margin: 10px;
 }
 
-/* Fix background image for mobile devices */
+
+/* Fix background image and round images for mobile devices */
 @media only screen and (max-width: 768px) {
     header {
         background-attachment: scroll;
@@ -54,6 +55,15 @@ h1, h2 {
     .site-section {
         background-size: cover; /* Ensure this is applied across sections */
         background-repeat: no-repeat;
+    }
+    
+    .round-images-container {
+        flex-direction: column; /* Stack images vertically on mobile */
+        align-items: center;
+    }
+
+    .round-image {
+        margin-bottom: 20px;
     }
 }
 
