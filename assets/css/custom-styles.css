@@ -1,38 +1,25 @@
-/* Styling for Service Boxes */
-.service-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* Load Google Fonts - Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* Apply Quicksand font to the entire site */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Customize the H1 and H2 headers */
+h1, h2 {
+    font-weight: 600; /* Use bold weight for headers */
+}
+
+/* Styling for the service list */
+.service-list {
+    list-style-type: none;
+    padding-left: 0;
     margin-top: 20px;
 }
 
-.service-box {
-    width: 30%;
-    padding: 20px;
-    text-align: center;
-    background-color: #081e3d; /* Dark navy */
-    color: #fff; /* White text */
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.service-box i {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-/* Rounded images container */
-.round-images-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.round-images-container img {
-    border-radius: 50%;
-}
-
-/* Hero Section Buttons */
-#hero .btn {
-    font-size: 1.2rem;
-    padding: 10px 20px;
+.service-list li {
+    font-size: 1.1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Light separator */
 }
