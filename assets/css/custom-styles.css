@@ -43,20 +43,8 @@ h1, h2 {
     margin: 10px;
 }
 
-
-/* Fix background image and round images for mobile devices */
+/* Mobile fix for round images */
 @media only screen and (max-width: 768px) {
-    header {
-        background-attachment: scroll;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    
-    .site-section {
-        background-size: cover; /* Ensure this is applied across sections */
-        background-repeat: no-repeat;
-    }
-    
     .round-images-container {
         flex-direction: column; /* Stack images vertically on mobile */
         align-items: center;
@@ -67,4 +55,59 @@ h1, h2 {
     }
 }
 
+/* Fix background image for mobile devices */
+@media only screen and (max-width: 768px) {
+    header {
+        background-attachment: scroll;
+        background-size: cover; /* Ensures image covers full width */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
+    .site-section {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Improve spacing between sections */
+.site-section {
+    padding: 60px 20px; /* Increase the padding for better readability */
+}
+
+@media only screen and (max-width: 768px) {
+    .site-section {
+        padding: 40px 15px; /* Smaller padding for mobile */
+    }
+}
+
+/* Footer Icon Layout */
+.page__footer-follow ul.socials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.page__footer-follow li.socials__item {
+    list-style: none;
+    margin: 10px;
+}
+
+.page__footer-follow a.socials__item__link {
+    font-size: 2rem; /* Adjust icon size */
+}
+
+@media only screen and (max-width: 768px) {
+    .page__footer-follow a.socials__item__link {
+        font-size: 1.6rem; /* Adjust icon size for mobile */
+    }
+}
+
+/* Center the contact button */
+#contact .btn {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 30px; /* Make the button larger for better usability */
+}
