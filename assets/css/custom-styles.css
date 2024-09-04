@@ -17,6 +17,13 @@ h1, h2 {
     font-weight: 600; /* Use bold weight for headers */
 }
 
+/* Ensure Quicksand applies to the header and hero section */
+#hero h1, #hero h2, #hero p, #hero a {
+    font-family: 'Quicksand', sans-serif; /* Force Quicksand for all text in the hero section */
+    font-weight: 600; /* Make sure headers are bold */
+    text-transform: uppercase; /* Ensure the uppercase styling for H1 */
+}
+
 /* Styling for the service list */
 .service-list {
     list-style-type: none;
@@ -39,8 +46,9 @@ h1, h2 {
 
 .round-image img {
     border-radius: 50%;
-    width: 200px; /* Set default size for desktop */
-    height: 200px;
+    width: 200px; /* Set width */
+    height: 200px; /* Set height equal to width for round shape */
+    object-fit: cover; /* Ensure the image doesn't get stretched */
 }
 
 .round-image {
@@ -58,7 +66,7 @@ h1, h2 {
 
     .round-image img {
         width: 150px; /* Resize for mobile */
-        height: 150px;
+        height: 150px; /* Maintain 1:1 aspect ratio */
     }
 
     .round-image {
