@@ -1,21 +1,28 @@
 /* Load Google Fonts - Quicksand for titles, Alegreya for body text */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&family=Quicksand:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&family=Quicksand:wght@300;400&display=swap');
 
 /* Apply Alegreya font to the entire site (default) */
 body {
     font-family: 'Alegreya', serif; /* Alegreya for body text */
 }
 
-/* Specifically apply Quicksand to headers and titles */
+/* Specifically apply Quicksand to headers and titles, with light weight */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif; /* Quicksand for headers */
-    font-weight: 600; /* Bold weight for headers */
+    font-weight: 400; /* Use light weight, no bold */
 }
 
-/* Ensure Quicksand applies to the header and hero section */
-#hero h1, #hero h2, #hero p, #hero a, header {
+/* Ensure Quicksand applies to the masthead */
+header .site-title, header .site-title a {
+    font-family: 'Quicksand', sans-serif; /* Ensure the main header uses Quicksand */
+    font-weight: 300; /* Use light weight for masthead */
+    text-transform: uppercase; /* Keep it uppercase */
+}
+
+/* Ensure Quicksand applies to the hero section */
+#hero h1, #hero h2, #hero p, #hero a {
     font-family: 'Quicksand', sans-serif; /* Force Quicksand for hero section */
-    font-weight: 600; /* Ensure headers are bold */
+    font-weight: 300; /* Light weight in the hero */
 }
 
 /* Styling for the service list */
@@ -32,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #ddd; /* Light separator */
 }
 
-/* Styling for round images */
+/* Fix for round images (ensure 1:1 ratio on desktop) */
 .round-images-container {
     display: flex;
     justify-content: space-between;
@@ -50,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     flex: 1;
     margin: 10px;
-    font-family: 'Alegreya', serif; /* Ensure captions use Alegreya */
+    font-family: 'Alegreya', serif; /* Use Alegreya for captions */
 }
 
 /* Mobile fix for round images */
@@ -85,6 +92,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+/* Ensure About Us and Contact sections use the correct fonts */
+#about h2, #contact h2 {
+    font-family: 'Quicksand', sans-serif; /* Quicksand for section headers */
+    font-weight: 300; /* Light weight for headers */
+}
+
+#about p, #contact p {
+    font-family: 'Alegreya', serif; /* Alegreya for body text */
+}
+
 /* Improve spacing between sections */
 .site-section {
     padding: 60px 20px; /* Increase the padding for better readability */
@@ -107,6 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 .page__footer-follow li.socials__item {
     list-style: none;
     margin: 10px;
+    vertical-align: middle; /* Fix icon alignment */
 }
 
 .page__footer-follow a.socials__item__link {
@@ -117,6 +135,11 @@ h1, h2, h3, h4, h5, h6 {
     .page__footer-follow a.socials__item__link {
         font-size: 1.6rem; /* Adjust icon size for mobile */
     }
+}
+
+/* Fix alignment issue with Website icon in the footer */
+.page__footer-follow li.socials__item:first-child {
+    margin-top: 0; /* Ensure the first icon doesn't float */
 }
 
 /* Center the contact button */
