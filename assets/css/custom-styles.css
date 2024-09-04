@@ -48,9 +48,11 @@ header .site-title, header .site-title a {
 
 .round-image img {
     border-radius: 50%;
-    width: 200px; /* Set width */
-    height: 200px; /* Set height equal to width for round shape */
-    object-fit: cover; /* Ensure the image doesn't get stretched */
+    width: 200px; /* Set consistent width */
+    height: auto; /* Allow height to adjust automatically */
+    max-height: 200px; /* Ensure it doesn't exceed the width */
+    aspect-ratio: 1/1; /* Ensure the image stays a perfect circle */
+    object-fit: cover; /* Prevent stretching and cropping */
 }
 
 .round-image {
@@ -70,6 +72,7 @@ header .site-title, header .site-title a {
     .round-image img {
         width: 150px; /* Resize for mobile */
         height: 150px; /* Maintain 1:1 aspect ratio */
+        aspect-ratio: 1/1; /* Ensure circle on mobile too */
     }
 
     .round-image {
